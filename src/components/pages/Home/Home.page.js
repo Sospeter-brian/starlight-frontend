@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import '../Home/Home.style.css'
+import './Home.style.css'
 //import { FaCat, FaChevronCircleRight, FaCircle, FaDog, FaStethoscope } from "react-icons/fa";
 
 const Home = () =>

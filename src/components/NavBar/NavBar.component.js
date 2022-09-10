@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-//import './NavBar.styles.css'
+import './NavBar.styles.css'
 //import { FaEnvelope, FaFacebook, /*FaFacebookF,*/ FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 const NavBar = () => {
