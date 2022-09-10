@@ -17,8 +17,8 @@ const NavBar = () => {
           <ul>
             <li> <Link to="/">Home</Link></li>
             <li> <Link to="about">About</Link></li>
-            {/* <li> <Link to="registerdoc">Register_Donors</Link></li>
-            <li> <Link to="viewdoc">View-Donors</Link></li> */}
+            <li> <Link to="registerdonor">Register_Donors</Link></li>
+            <li> <Link to="viewdonor">View_Donors</Link></li>
             {/* <li> <Link to="petsdata">Pets Data</Link></li> */}
             {/* <li> <Link to="/home"/>Pets Data</li> */}
           </ul>

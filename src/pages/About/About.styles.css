@@ -1,0 +1,33 @@
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 2em;
+    margin: 1.5em 0 .0em;
+    width: 100vw;
+    height: 180vh;
+    background-image:repeating-radial-gradient(#aaaaaa, #ffff, #828282);
+}
+.section-one{
+    width: 65%;
+    height: 100%;
+}
+.abt-sec1{
+    width: 100%;
+    height: 90%;
+    margin-top: 1em;
+    margin-left: 1em;
+    border: #137bff solid 1px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #137bff;
+}
+.about-us{
+    text-align: center;
+}
+.services{
+    text-align: center;
+}
+.services h3{
+    font-size: 20px;
+    text-decoration: overline #00be51;
+}
