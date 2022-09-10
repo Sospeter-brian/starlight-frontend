@@ -1,5 +1,5 @@
 import React from 'react'
-import "../About/About.styles.css";
+//import "../About/About.styles.css";
 
 const About = () => {
     return (
@@ -9,7 +9,7 @@ const About = () => {
             <div className="about-us">
               <h1>About Us</h1>
               <p className="abt-paragraph">
-                FOllowing the words of Mother Theresa; Give until it pains,
+                Following the words of Mother Theresa; Give until it pains,
                 Starlight foundation is an organization that is keen in helping
                 the less fortunate in the society through charitable donations.{" "}
               </p>
@@ -18,7 +18,7 @@ const About = () => {
             <div className="services">
               <h3>Our Services</h3>
               <p>
-                Starlight foundation is a web application that offers a
+                Starlight Foundation is a web application that offers a
                 platform for the well-wishers and donors to offer their 
                 donations pledges.
               </p>
