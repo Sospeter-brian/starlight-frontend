@@ -1,7 +1,7 @@
 import React from 'react'
-//import "./RegDonor.styles.css"
+import "./RegDonor.styles.css"
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
 
 const RegDonor = () => {
 
@@ -9,11 +9,22 @@ const [name, setName] = useState('')
 const [phone_number, setPhone_number] = useState(17955457183)
 const [donation_pledge, setDonation_pledge] = useState()
 
-const navigate = useNavigate()
+//const navigate = useNavigate()
 
 const handleSubmit = (e) => {
     e.preventDefault()
-    const donor = {name, phone_number,donation_pledge}
+    const donor = {name, phone_number, donation_pledge}
+    console.log(donor)
+
+    fetch('http://localhost:9292/donors', {
+      method: 'POST',
+      headers: { "Content-Type": 'application/json' },
+      body: JSON.stringify(donor)
+  
+    }).then(() => {
+      console.log("New donor added successfuly");
+    })
+    // history.push('/')
 }
 return(
     <div class="container">
@@ -34,12 +45,13 @@ return(
                 <div class="input-box">
                     <span class="details">Donation Pledge</span>
             <select value={donation_pledge} required onChange={(e) => setDonation_pledge(e.target.value)}>
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
+                        <option value="1">Clothing</option>
+                        <option value="2">Linens</option>
+                        <option value="3">Food</option>
+                        {/* <option value="4"></option> */}
                     </select>
                     <button type='submit' onClick={handleSubmit} className="button">Register</button>
+                    
                 </div>
 
                 </form>
