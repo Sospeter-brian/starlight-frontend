@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-//import '.ViewDonor.style.css'
+import './ViewDonor.styles.css'
 import useFetch from '../../custom-hooks/useFetch';
 import {Link} from 'react-router-dom'
 

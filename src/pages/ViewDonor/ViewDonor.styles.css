@@ -1,0 +1,22 @@
+.filter {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid red;
+    margin: 10px;
+}
+.main-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-text a{
+    text-decoration: none;
+}

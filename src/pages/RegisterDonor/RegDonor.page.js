@@ -6,7 +6,7 @@ import { useState } from 'react'
 const RegDonor = () => {
 
 const [name, setName] = useState('')
-const [phone_number, setPhone_number] = useState(17955457183)
+const [phone_number, setPhone_number] = useState()
 const [donation_pledge, setDonation_pledge] = useState()
 
 //const navigate = useNavigate()

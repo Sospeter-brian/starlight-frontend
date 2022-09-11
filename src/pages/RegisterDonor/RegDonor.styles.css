@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    height: 100hv;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.923);
+}
+
+.container{
+    margin-top: 40px;
+    max-width: 1368px;
+    height: 950px;
+    width: 100%;
+    background-color: grey;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    margin: 20px 0 12px 0;
+    grid-template-columns: repeat(2);
+    width: calc(100%/2 - 50px);
+    /* padding: 20px; */
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin: 10px;
+
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+
+}
+
+.user-details .input-box select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+}
+form{
+    margin-top: 40px;
+}
+
+.button{
+margin-top: 50px;
+background-color: green;
+border: none;
+color: white;
+font-size: 25;
+height: 55px;
+width: 100%;
+outline: none;
+border-radius: 5px;
+border: 1px solid #ccc;
+padding: 15px;
+font-size: 16px;
+}
