@@ -4,21 +4,30 @@ import useFetch from '../../../custom-hooks/useFetch'
 
 
 const DonorDetails = () => {
-    const { id } = useParams()
-    const {data: doctor, error, loading } = useFetch("http://localhost:9292/donors/" + donor.id, {
-        method: 'DELETE'
-    }).then(()=> {
-        console.log(id)
-    })
 
+    const { id } = useParams()
+    const {data: donor, error, loading } = useFetch('https://starlight-foundation.herokuapp.com/donors' + donor.id)
+        const handleDelete = () => {
+            fetch('https://starlight-foundation.herokuapp.com/donors' + donor.id, {
+                method: 'DELETE'
+            }).then(()=>{
+                console.log(id)
+            })
+        }
+        
+
+        
+    
 return (
     <div>
         {
-            donor && (
-                <div className="container">
-                    {donor.name}
-                    </div>
-            )
+            donor
+            // donor && (
+            //     <div className="container">
+            //         <div className="img"> {donor.name}
+            //        </div>
+            //         </div>
+            // )
         }
         <button onClick={handleDelete}>delete</button>
     </div>

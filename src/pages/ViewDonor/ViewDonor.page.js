@@ -2,10 +2,10 @@ import React,{ useState } from 'react'
 import './ViewDonor.styles.css'
 import useFetch from '../../custom-hooks/useFetch';
 import {Link} from 'react-router-dom'
-
+//import DonorDetails from '../DonorDetails'
 const ViewDonors = () => {
     
-    const { data: donors, loading, error} = useFetch('http://localhost:9292/donors')
+    const { data: donors, loading, error} = useFetch('https://starlight-foundation.herokuapp.com/donors')
     const [donation_pledge, setDonationPledge] = useState("All")
 
     const handleDonationPledgeChange = (e) => {

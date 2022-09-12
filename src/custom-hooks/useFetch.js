@@ -8,7 +8,7 @@ const useFetch = (url) => {
    useEffect(() => {
 
        const getDonorsData = async () => {
-        const response = await fetch(url)
+        const response = await fetch('https://starlight-foundation.herokuapp.com/donors')
         const data = await response.json()
         setData(data)
        setLoading(false);

@@ -16,13 +16,14 @@ const handleSubmit = (e) => {
     const donor = {name, phone_number, donation_pledge}
     console.log(donor)
 
-    fetch('http://localhost:9292/donors', {
+    fetch('https://starlight-foundation.herokuapp.com/donors', {
       method: 'POST',
       headers: { "Content-Type": 'application/json' },
       body: JSON.stringify(donor)
   
     }).then(() => {
       console.log("New donor added successfuly");
+     // navigate('/viewdoc');
     })
     // history.push('/')
 }
