@@ -27,9 +27,9 @@ I succesfully deployed both the frontend and backend at Heroku.
 
 Frontend=>
 
-Backend=>
+Backend=>https://starlight-foundation.herokuapp.com/donors
 
-You can use /donors at the end of the link to view on of the endpoint.
+The /donors at the end of the link is one of my endpoint.
 
 ## Resources.
 
