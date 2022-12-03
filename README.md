@@ -25,9 +25,7 @@ Starlight Foundation website is built using sinatra backend to build an API, Rea
 ## Deployment.
 I succesfully deployed both the frontend and backend at Heroku.
 
-Frontend=>https://starlight-frontend.herokuapp.com/
-
-Backend=>https://starlight-foundation.herokuapp.com/donors
+Frontend=>https://starlight-frontend-ahmu7dzym-sospeter-brian.vercel.app/
 
 The /donors at the end of the link is one of my endpoint.
 
@@ -35,4 +33,4 @@ The /donors at the end of the link is one of my endpoint.
 
 ***Google***=>conducted research on the project and how to implement it.
 
-***Heroku***=>to deploy my website. 
+***Vercel***=>to deploy my website. 
